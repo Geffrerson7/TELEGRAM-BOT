@@ -17,8 +17,8 @@ let pokemon = JSON.parse(fs.readFileSync("./src/pokemon.json", "utf8"));
 
 function startServer() {
   server.listen(port, () => {
-    console.log(`http://localhost:${port}/`);
-  });
+    console.log(`Running server on port: ${port}`);
+  });alhost
 
   app.post("/", function (req, res) {
     let id = req.body.message.pokemon_id;
